@@ -1,3 +1,9 @@
+# revision 23089
+# category Package
+# catalog-ctan /systems/knuth/dist/mf
+# catalog-date 2011-04-11 11:22:45 +0200
+# catalog-license knuth
+# catalog-version 2.718281
 Name:		texlive-metafont
 Version:	2.718281
 Release:	1
@@ -73,6 +79,7 @@ it should not be processed without Knuth's direct permission.
 %doc %{_texmfdir}/doc/man/man1/mf-nowin.man1.pdf
 %doc %{_mandir}/man1/mf.1*
 %doc %{_texmfdir}/doc/man/man1/mf.man1.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -85,3 +92,5 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
