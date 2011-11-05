@@ -15,11 +15,9 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metafont.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metafont.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
-Requires:	texlive-kpathsea
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
 Requires:	texlive-metafont.bin
-Provides:	tetex-mfwin = %{version}
-Provides:	texlive-mfwin = %{version}
 Obsoletes:	tetex-mfwin <= 3.0
 Conflicts:	tetex-mfwin <= 3.0
 Obsoletes:	texlive-mfwin <= 2007
