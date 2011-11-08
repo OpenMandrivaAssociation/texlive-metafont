@@ -6,7 +6,7 @@
 # catalog-version 2.718281
 Name:		texlive-metafont
 Version:	2.718281
-Release:	1
+Release:	2
 Summary:	A system for specifying fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/dist/mf
@@ -52,6 +52,7 @@ it should not be processed without Knuth's direct permission.
     if [ $1 -eq 0 ]; then
 	%_texmf_mktexlsr_post
     fi
+    rm -fr %{_texmfvardir}/web2c/metafont
 
 #-----------------------------------------------------------------------
 %files
