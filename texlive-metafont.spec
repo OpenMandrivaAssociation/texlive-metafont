@@ -6,7 +6,7 @@
 # catalog-version 2.718281
 Name:		texlive-metafont
 Version:	2.718281
-Release:	2
+Release:	3
 Summary:	A system for specifying fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/dist/mf
@@ -18,10 +18,8 @@ BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 Requires:	texlive-metafont.bin
-Obsoletes:	tetex-mfwin <= 3.0
-Conflicts:	tetex-mfwin <= 3.0
-Obsoletes:	texlive-mfwin <= 2007
-Conflicts:	texlive-mfwin <= 2007
+%rename tetex-mfwin
+%rename texlive-mfwin
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
 
