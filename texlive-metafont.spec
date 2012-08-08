@@ -1,12 +1,12 @@
-# revision 23089
+# revision 26689
 # category Package
 # catalog-ctan /systems/knuth/dist/mf
-# catalog-date 2011-04-11 11:22:45 +0200
+# catalog-date 2012-05-23 16:10:32 +0200
 # catalog-license knuth
 # catalog-version 2.718281
 Name:		texlive-metafont
 Version:	2.718281
-Release:	5
+Release:	6
 Summary:	A system for specifying fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/dist/mf
