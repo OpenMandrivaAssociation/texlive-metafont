@@ -86,3 +86,33 @@ cat > %{buildroot}%{_texmf_fmtutil_d}/metafont <<EOF
 # from metafont:
 mf mf-nowin - -translate-file=cp227.tcx mf.ini
 EOF
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-6
++ Revision: 812579
+- Update to latest release.
+
+* Tue Feb 21 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-5
++ Revision: 778417
+- Rebuild after tlpobj2spec.pl bug correction.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-4
++ Revision: 753854
+- Rebuild to reduce used resources
+
+* Sun Nov 13 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-3
++ Revision: 730339
+- Use rename macro instead of mix of provides/conflicts/obsoletes
+
+* Tue Nov 08 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-2
++ Revision: 729093
+- texlive-metafont
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-1
++ Revision: 718993
+- texlive-metafont
+- texlive-metafont
+- texlive-metafont
+- texlive-metafont
+
