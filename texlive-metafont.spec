@@ -1,12 +1,12 @@
-# revision 26689
+# revision 29764
 # category Package
 # catalog-ctan /systems/knuth/dist/mf
-# catalog-date 2012-05-23 16:10:32 +0200
+# catalog-date 2012-08-30 22:47:45 +0200
 # catalog-license knuth
 # catalog-version 2.718281
 Name:		texlive-metafont
 Version:	2.718281
-Release:	6
+Release:	7
 Summary:	A system for specifying fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/dist/mf
@@ -65,9 +65,9 @@ it should not be processed without Knuth's direct permission.
 %{_texmfdistdir}/metafont/misc/ztest.mf
 %_texmf_fmtutil_d/metafont
 %doc %{_mandir}/man1/mf-nowin.1*
-%doc %{_texmfdir}/doc/man/man1/mf-nowin.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/mf-nowin.man1.pdf
 %doc %{_mandir}/man1/mf.1*
-%doc %{_texmfdir}/doc/man/man1/mf.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/mf.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -77,42 +77,12 @@ it should not be processed without Knuth's direct permission.
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
 mkdir -p %{buildroot}%{_texmf_fmtutil_d}
 cat > %{buildroot}%{_texmf_fmtutil_d}/metafont <<EOF
 #
 # from metafont:
 mf mf-nowin - -translate-file=cp227.tcx mf.ini
 EOF
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-6
-+ Revision: 812579
-- Update to latest release.
-
-* Tue Feb 21 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-5
-+ Revision: 778417
-- Rebuild after tlpobj2spec.pl bug correction.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-4
-+ Revision: 753854
-- Rebuild to reduce used resources
-
-* Sun Nov 13 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-3
-+ Revision: 730339
-- Use rename macro instead of mix of provides/conflicts/obsoletes
-
-* Tue Nov 08 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-2
-+ Revision: 729093
-- texlive-metafont
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.718281-1
-+ Revision: 718993
-- texlive-metafont
-- texlive-metafont
-- texlive-metafont
-- texlive-metafont
-
