@@ -6,7 +6,7 @@
 # catalog-version 2.7182818
 Name:		texlive-metafont
 Version:	2.7182818
-Release:	4
+Release:	5
 Summary:	A system for specifying fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/dist/mf
