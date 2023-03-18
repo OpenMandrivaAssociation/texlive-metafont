@@ -1,6 +1,6 @@
 Name:		texlive-metafont
 Version:	62387
-Release:	1
+Release:	2
 Summary:	A system for specifying fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/dist/mf
@@ -13,6 +13,7 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 Requires(post):	texlive-tetex
 Requires:	texlive-metafont.bin
+Requires:	texlive-modes
 %rename tetex-mfwin
 %rename texlive-mfwin
 
