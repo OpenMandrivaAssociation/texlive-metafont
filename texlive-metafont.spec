@@ -1,6 +1,6 @@
 Name:		texlive-metafont
-Version:	62387
-Release:	3
+Version:	66186
+Release:	1
 Summary:	A system for specifying fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/dist/mf
