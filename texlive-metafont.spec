@@ -1,5 +1,5 @@
 Name:		texlive-metafont
-Version:	66186
+Version:	70015
 Release:	1
 Summary:	A system for specifying fonts
 Group:		Publishing
