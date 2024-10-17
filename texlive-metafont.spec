@@ -3,7 +3,7 @@ Version:	70015
 Release:	1
 Summary:	A system for specifying fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/systems/knuth/dist/mf
+URL:		https://www.ctan.org/tex-archive/systems/knuth/dist/mf
 License:	KNUTH
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metafont.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metafont.doc.r%{version}.tar.xz
